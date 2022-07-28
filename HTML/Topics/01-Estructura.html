@@ -1,0 +1,58 @@
+<!-- signo de exclamasión + tab y se crea la estructura basica -->
+<!--
+    <!DOCTYPE html> 
+    le dice al navegador que estamos escribiendo codigo HTML 5
+    si no esta esto el navegador tratara al codigo como codigo antiguo 
+    entra en Quirks mode 
+    saldran errores que existian antes
+-->
+<!DOCTYPE html> 
+<!-- esta es la etiqueta raiz de todo documento html -->
+<html lang="en">
+    <!--caracteristicas de la pagina web que no necesariamente son visibles por el usuario-->
+    <head>
+        <!--Titulo de la pagina web que aparece en la pestaña-->
+        <title>Estructura Basica</title>
+    </head>
+     <!--Aqui se muestra el contenido de la pagina web-->
+     <!--Las propiedades id y class se utilizan para que esos elementos sean llamados desde css y javascript-->
+     <!--id es unico y no debe repetirse mientras que class permite que varios elementos tengan la misma clase-->
+    <body>
+        <!--agrupa links, logo nombre todo referente a la pagina web-->
+        <!--se puede crear varios headers siempre y cuando no vaya dentro de otro header y tampoco dentro de un footer-->
+        <header>
+            <h1 id="titulo">Titulo de la pagina web</h1>
+        </header>
+        <!--agrupar elementos comunes al igual que los divs-->
+        <section>
+            <!--definir elementos independientes como los post, noticias, publicaciones-->
+            <article class="post">
+                <h2>titulo del articulo</h2>
+                <p>descripción</p>
+                <img src="./imagenes/drow_ranger.png" width="50" alt="">
+                <p>texto del articulo</p>
+            </article>
+            <article class="post">
+                <h2>titulo del articulo 2</h2>
+                <p>descripción 2</p>
+                <img src="./imagenes/drow_ranger.png" width="50" alt="">
+                <p>texto del articulo 2</p>
+            </article>
+            <article class="post">
+                <h2>titulo del articulo 2</h2>
+                <p>descripción 2</p>
+                <img src="./imagenes/drow_ranger.png" width="50" alt="">
+                <p>texto del articulo 2</p>
+            </article>
+        </section>
+        <!--
+            pie de pagina de la pagina web copyright, información de contacto, 
+            información del sitio, links para volver al comienzo, información 
+            acerca del autor
+        -->
+        <footer>
+            <a href="#titulo">subir</a>
+            <a href="mailto:jlucasb@unsa.edu.pe">escribeme aqui</a>
+        </footer>
+    </body>
+</html>

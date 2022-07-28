@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Etiqueta para la interacción con el usuario
+        Agrupa un conjunto de etiquetas de formulario
+        action indica la dirección del servidor que recibira el formulario
+        method : forma de envio
+            - GET : envia usando la url, tiene un limite en la URL de 255 caracteres
+            - POST : envia los datos en las cabeceras y no es seguro por si solo
+    -->
+
+    <form action="/formulario.php" method="POST">
+        <!--
+            Etiqueta para identificar a que hace referencia la caja de texto
+            - La propiedad for permite que cuando se le haga click al label el foco pase a su caja de texto correspondiente
+        -->
+        <label for="name">Nombre</label>
+        <!--
+            Etiqueta para una caja de texto
+            - El id identifica la caja de texto y no se puede repetir
+            - La etiqueta name es utilizada como clave desde el servidor que reciba el formulario
+                - Lo que ingrese el usuario en la caja de texto se convertiria en el valor y cuya clave es el valor de la propiedad name
+            - placeholder : indicar el formato que tiene que tener el ingreso
+            - value : valor por defecto
+            - type : 
+                - text : texto
+                - submit : boton
+                - radio : radiobutton
+                - checkbox : casilla de verificacion
+                - file : archivo
+                - email : entrada de email
+                - password : contraseña
+        -->
+        <input value="valor" id="name" type="email" name="name" placeholder="place">
+        <br>
+        <label for="contra">contraseña</label>
+        <input type="password" id="contra">
+        <br>
+        <label for="comentario">comentario</label>
+        <!--El valor por defecto del text area esta entre las etiquetas-->
+        <textarea name="comentario" id="comentario" placeholder="ingrese comentario" cols="40" rows="10">valor por defecto</textarea>
+        <br>
+        <input type="submit">
+        <!--El proble del input submit es que no es personalizable es por ello que se usa botones-->
+        <!--
+            Tres tipos de type para los botones
+            button : normal no hace nada y es JS el que le da la funcionalidad
+            reset : restaura los campos del formulario a los valores por defecto
+            submit : envia la información de los campos del formulario, este viene por defecto pero es recomendable especificarlo
+            se puede poner una etiqueta dentro de la etiqueta de button como la etiqueta img de esta manera se estaria pulsando una imagen
+        -->
+        <button type="button"><img src="./imagenes/drow_ranger.png" width="60" alt=""></button>
+        <button type="button">enviar</button>
+    </form>
+</body>
+</html>

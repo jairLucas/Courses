@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table, th, td{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!--thead y tbody sirve para que algunos navegadores puedan activar un scroll en la tabla-->
+        <thead>
+            <!--table row-->
+            <tr>
+                <!--cabecera-->
+                <th>Producto</th>
+                <th>precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--Definir elementos standares de la tabla-->
+                <td>Hola beats</td>
+                <td>free</td>
+            </tr>
+        </tbody>
+        <!--algunos navegadores no todos no le haran scroll a la parte del total-->
+        <tfoot>
+            <td></td>
+            <td>total 24$</td>
+        </tfoot>
+    </table>
+</body>
+</html>
